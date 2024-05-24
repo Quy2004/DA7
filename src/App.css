@@ -1,10 +1,12 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+.container {
+  max-width: 1480px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +41,25 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Header */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom:  1px solid #f5f5f5;
+  transition: all 0.5s ease-in-out;
+}
+header .sticky{
+  background: #fff;
+  opacity: 0.9;
+}
+
+header .sticky #main-menu p{
+  color: #000;
+}
+#main-menu a{
+  font-weight: bold;
 }
