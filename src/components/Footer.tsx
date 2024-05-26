@@ -6,8 +6,8 @@ const Footer: React.FC = () => {
                     <div className=" container mx-auto">
                         <div className="row mb-8 grid grid-cols-4 gap-5">
                             <div className="cow">
-                                <h4>Giới thiệu</h4>
-                                <ul>
+                                <h4 className="font-bold text-base pb-3">Giới thiệu</h4>
+                                <ul className="*:text-xs *:py-2">
                                     <li><a href="">Về chúng tôi</a></li>
                                     <li><a href="">Sản phẩm</a></li>
                                     <li><a href="">khuyến mãi</a></li>
@@ -15,31 +15,39 @@ const Footer: React.FC = () => {
                                 </ul>
                             </div>
                             <div className="cow">
-                                <h4>Điều khoản</h4>
-                                <ul>
-                                    <li><a href="">Điều khoản</a></li>
+                                <h4 className="font-bold text-base pb-3">Điều khoản</h4>
+                                <ul className="*:text-xs *:py-2">
+                                    <li className=""><a href="">Điều khoản</a></li>
                                     <li><a href="">Chính sách bảo mật thông tin</a></li>
                                     <li><a href="">Hướng dẫn xuát hóa đơn GTGT</a></li>
                                 </ul>
                             </div>
-                            <div className="cow">
-                                <h4>Đặt hàng: 1800 1800</h4>
-                                <h4>Liên hệ</h4>
-                                <p>
+                            <div className="cow *:pb-5">
+                                <h4 className="font-bold text-base">Đặt hàng: 1800 1800</h4>
+                                <h4 className="font-bold text-base">Liên hệ</h4>
+                                <p className="text-xs w-40">
                                     Tầng 3-4 Hub Building
                                     195/10E Điện Biên Phủ, P.15,
                                     Q.Bình Thạnh, TP.Hồ Chí Minh
                                 </p>
                             </div>
                             <div className="cow">
-                                <iframe className=""
+                                {/* <iframe className=""
                                     width="300"
                                     height="150"
-                                    src="https://www.youtube.com/embed/6Zr5LqMAATM?si=b-tHJNHa70xsv-x0"
+                                    src="https://youtu.be/OE57pr7sPE4?si=sw5v14SPVBwUzOXI"
                                     title="YouTube video player"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowFullScreen
-                                ></iframe>
+                                ></iframe> */}
+                                <iframe
+                                    width="300"
+                                    height="150"
+                                    src="https://www.youtube.com/embed/OE57pr7sPE4?si=sw5v14SPVBwUzOXI"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+
+                                </iframe>
                                 <div>
                                     <a href="https://www.facebook.com/choe.quy1412/" target="_blank" rel="noopener noreferrer">
                                         <i className="fa-brands fa-square-facebook fa-2xl"></i>

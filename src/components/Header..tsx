@@ -3,43 +3,46 @@ import { Link } from "react-router-dom"
 const Header: React.FC = () => {
     return (
         <header className="" >
-            <div className=" flex h-16 bg-white bg-opacity-70 max-w items-center gap-8 px-4 sm:px-6 lg:px-8">
-                <div className="container mx-auto inner-header">
-                    <nav aria-label="Global" className="hidden md:block">
-                        <ul className="flex items-center gap-6 text-sm" id="main-menu">
+            <div className=" flex h-16 bg-white bg-opacity-70 max-w items-center justify-evenly gap-8 px-4 sm:px-6 lg:px-8">
+                <div className=" flex justify-normal container mx-auto inner-header">
+                    <div>
+                        <ul>
                             <li>
                                 <Link to="/" className="bg-none">
                                     <img className="h-16" src="/src/assets/images/bg-remove-cf.png" alt="" />
                                 </Link>
                             </li>
-
-                            <li>
+                        </ul>
+                    </div>
+                    <nav aria-label="Global" className="hidden md:block">
+                        <ul className="flex items-center text-sm font-semibold" id="main-menu">
+                            <li className="px-4 py-6">
                                 <Link className="" to="#" >
-                                    <p> Trà </p>
+                                    <h3> Trà </h3>
                                 </Link>
                             </li>
 
-                            <li>
-                                <Link className="" to="#">
-                                    <p>Cà Phê</p>
+                            <li className="px-4 py-6">
+                                <Link to="#">
+                                    <h3>Cà Phê</h3>
                                 </Link>
                             </li>
 
-                            <li>
-                                <Link className="" to="/menu" >
-                                    <p>Menu</p>
+                            <li className="px-4 py-6">
+                                <Link to="/menu" >
+                                    <h3>Menu</h3>
                                 </Link>
                             </li>
 
-                            <li>
-                                <Link className="" to="/chuyennha">
-                                    <p>Chuyện nhà</p>
+                            <li className="px-4 py-6">
+                                <Link to="/chuyennha">
+                                    <h3>Chuyện nhà</h3>
                                 </Link>
                             </li>
 
-                            <li>
-                                <Link className="" to="#">
-                                    <p>Tài Khoản</p>
+                            <li className="px-4 py-6">
+                                <Link to="#">
+                                    <h3>Tài Khoản</h3>
                                 </Link>
                             </li>
                         </ul>
