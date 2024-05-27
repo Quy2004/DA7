@@ -1,16 +1,15 @@
-import { Link } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 import "./ChuyenNha.css"
 import { useState } from "react";
-import AllHomes from "./Tabs/AllHomes";
 
 const ChuyenNhaPage: React.FC = () => {
     const [activeTab, setActiveTab] = useState('Tất cả');
 
     const tabs = [
-        { name: 'Tất cả', link: '/' },
-        { name: 'Coffeeholic', link: '' },
-        { name: 'Teaholic', link: '' },
-        { name: 'Blog', link: '' }
+        { name: 'Tất cả', link: '' },
+        { name: 'Coffeeholic', link: 'coffeeholic' },
+        { name: 'Teaholic', link: 'teaholic' },
+        { name: 'Blog', link: 'blog' }
     ];
     return (
         <>
@@ -42,14 +41,14 @@ const ChuyenNhaPage: React.FC = () => {
                     </ul>
                 </div> */}
                 <div className="tabs *:border-box my-6 ">
-                    <ul className="flex justify-center *:px-4 *:text-lg *:font-semibold gap-5">
+                    <ul className="flex justify-center *:text-lg *:font-semibold gap-5">
                         {tabs.map(tab => (
                             <li
                                 key={tab.name}
                                 className={`${activeTab === tab.name ? 'bg-amber-100 text-orange-500' : 'border-2'} rounded-3xl py-1.5 *:hover:text-orange-500`}
                                 onClick={() => setActiveTab(tab.name)}
                             >
-                                <Link to={tab.link} className={`px-3.5 ${activeTab === tab.name ? 'text-orange-500' : ''}`}>
+                                <Link to={tab.link} className={`px-8 py-[10px] ${activeTab === tab.name ? 'text-orange-500' : ''}`}>
                                     {tab.name}
                                 </Link>
                             </li>
@@ -58,8 +57,8 @@ const ChuyenNhaPage: React.FC = () => {
                 </div>
             </div>
             <div>
-                <AllHomes />
-
+                {/* <AllHomes /> */}
+                <Outlet />
             </div>
         </>
     )
