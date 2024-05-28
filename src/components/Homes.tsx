@@ -13,7 +13,7 @@ const Homes: React.FC = () => {
                                 <li className="">
                                     <Link to="#">
                                         <img src="https://file.hstatic.net/1000075078/article/thecoffeehouse_caphehighlight01_de40c0102a954c50a328f7befcdd82bd_master.jpg" alt=""
-                                            className="hover:scale-110 ease-in-out duration-300" />
+                                            className="hover:scale-110 ease-in-out duration-300 object-cover" />
                                     </Link>
                                 </li>
                             </ul>
@@ -38,7 +38,7 @@ const Homes: React.FC = () => {
                                 <li>
                                     <Link to="#">
                                         <img src="https://file.hstatic.net/1000075078/article/1200x630_0b0081d93ba6479b934e04e71cbfd102_grande.jpg" alt=""
-                                            className="hover:scale-110 ease-in-out duration-300" />
+                                            className="hover:scale-110 ease-in-out duration-300 object-cover"  />
                                     </Link>
                                 </li>
                             </ul>
@@ -64,7 +64,7 @@ const Homes: React.FC = () => {
                                 <li>
                                     <Link to="#">
                                         <img src="https://file.hstatic.net/1000075078/article/3__1__2b67342f4db64bb082944cf078afd910_grande.jpg" alt=""
-                                            className="hover:scale-110 ease-in-out duration-300" />
+                                            className="hover:scale-110 ease-in-out duration-300 object-cover" />
                                     </Link>
                                 </li>
                             </ul>
@@ -87,7 +87,6 @@ const Homes: React.FC = () => {
                 </div>
 
                 {/* TEAHOLIC */}
-
                 <div>
                     <h3 className="border-l-[6px] text-left text-2xl font-semibold px-3 py-0.5 mb-5 mt-10 border-l-orange-400">Techolic</h3>
                     <div className="row grid grid-cols-3 gap-5">
@@ -96,7 +95,7 @@ const Homes: React.FC = () => {
                                 <li>
                                     <a href="">
                                         <img src="https://file.hstatic.net/1000075078/article/an_banh_uong_nuoc_nhom_03_d499c0cab14746588fff6fe0dee678ad_grande.jpg" alt=""
-                                            className="hover:scale-110 ease-in-out duration-300" />
+                                            className="hover:scale-110 ease-in-out duration-300 object-cover" />
                                     </a>
                                 </li>
                             </ul>
@@ -125,7 +124,7 @@ const Homes: React.FC = () => {
                                 <li className="">
                                     <a href="">
                                         <img src="https://file.hstatic.net/1000075078/article/cautoankeothom_thecoffeehouse_03_29cd435c9a574e1a867ac36f2c863bb6_grande.jpg" alt=""
-                                            className="hover:scale-110 ease-in-out duration-300" />
+                                            className="hover:scale-110 ease-in-out duration-300 object-cover" />
                                     </a>
                                 </li>
                             </ul>
@@ -154,7 +153,7 @@ const Homes: React.FC = () => {
                                 <li>
                                     <Link to="#">
                                         <img src="https://file.hstatic.net/1000075078/article/dscf0216_2890bcca44ae49aaaf843d5fa3db2fc6_grande.jpg" alt=""
-                                            className="hover:scale-110 ease-in-out duration-300" />
+                                            className="hover:scale-110 ease-in-out duration-300 object-cover" />
                                     </Link>
                                 </li>
                             </ul>
@@ -181,8 +180,8 @@ const Homes: React.FC = () => {
                         </div>
                     </div>
                 </div>
-                {/* BLOG */}
 
+                {/* BLOG */}
                 <div>
                     <h2 className="border-l-[6px] text-left text-2xl font-semibold px-3 py-0.5 mb-5 mt-10 border-l-orange-400">Blog</h2>
                     <div className="row grid grid-cols-3 gap-5">
@@ -191,7 +190,7 @@ const Homes: React.FC = () => {
                                 <li>
                                     <Link to="#">
                                         <img src="https://file.hstatic.net/1000075078/article/post-tcbc_f_2e456821ebac42398b294f9356fe30a0_grande.jpg" alt=""
-                                            className="hover:scale-110 ease-in-out duration-300" />
+                                            className="hover:scale-110 ease-in-out duration-300 object-cover" />
                                     </Link>
                                 </li>
                             </ul>
@@ -224,7 +223,7 @@ const Homes: React.FC = () => {
                                 <li>
                                     <Link to="#">
                                         <img src="https://file.hstatic.net/1000075078/article/zalo_01c6f0bfb0854951a16a92b52457ca56_grande.jpg" alt=""
-                                            className="hover:scale-110 ease-in-out duration-300" />
+                                            className="hover:scale-110 ease-in-out duration-300 object-cover" />
                                     </Link>
                                 </li>
                             </ul>
@@ -250,7 +249,7 @@ const Homes: React.FC = () => {
                                 <li>
                                     <Link to="#">
                                         <img src="https://file.hstatic.net/1000075078/article/thecoffeehouse_timesquare_02_b87f7576b02d4d82ba5b7ed4e40b6b00_grande.png" alt=""
-                                            className="hover:scale-110 ease-in-out duration-300" />
+                                            className="hover:scale-110 ease-in-out duration-300 object-cover" />
                                     </Link>
                                 </li>
                             </ul>
