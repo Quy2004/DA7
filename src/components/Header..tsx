@@ -16,7 +16,7 @@ const Header: React.FC = () => {
                     </div>
                     <nav aria-label="Global" className="hidden md:block">
                         <ul className="flex items-center text-sm font-semibold" id="main-menu">
-                            <li className="px-4 py-6">
+                            <li className="px-6 py-6">
                                 <Link className="" to="#" >
                                     <h3> Trà </h3>
                                 </Link>
