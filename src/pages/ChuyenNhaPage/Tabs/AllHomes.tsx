@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import '../ChuyenNha.css'
 const AllHomes: React.FC = () => {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Cuộn nhanh lên đầu trang mà không có hiệu ứng cuộn chậm
+        });
+    };
     return (
         <>
             <div className="allHome row grid  grid-cols-3 containerAll mx-auto gap-8 my-20 ">
@@ -157,7 +163,7 @@ const AllHomes: React.FC = () => {
                             </div>
                         </div>
                         <div>
-                            <Link to="#">
+                            <Link to="coffeeholic" onClick={scrollToTop}>
                                 <h3 className="border-2 w-1/3 mx-auto my-8 py-2 rounded-lg bg-white font-semibold text-[17px]">
                                     Tìm hiểu thêm
                                 </h3>
@@ -259,7 +265,7 @@ const AllHomes: React.FC = () => {
                         </div>
                     </div>
                     <div>
-                        <Link to="#">
+                        <Link to="teaholic">
                             <h3 className="border-2 w-1/3 mx-auto my-8 py-2 rounded-lg bg-white font-semibold text-[17px]">
                                 Tìm hiểu thêm
                             </h3>
