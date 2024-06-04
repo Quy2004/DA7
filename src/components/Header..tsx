@@ -41,7 +41,7 @@ const Header: React.FC = () => {
                             </li>
 
                             <li className="px-4 py-6">
-                                <Link to="#">
+                                <Link to="/regiter">
                                     <h3>Tài Khoản</h3>
                                 </Link>
                             </li>

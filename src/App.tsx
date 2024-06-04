@@ -15,21 +15,22 @@ import Signin from "./account/signin/signin";
 // import "./pages/HomePage/HomePage.css"
 function App() {
   return (
-      <Routes>
-        <Route path="" element={<WebsiteLayout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="menu" element={<MenuPage />} />
-          <Route path="chuyennha" element={<ChuyenNhaPage />}>
-            <Route path="" element={<AllHomes />} />
-            <Route path="coffeeholic" element={<CoffeHolicTab />} />
-            <Route path="teaholic" element={<TeaHolicTab />} />
-            <Route path="blog" element={<BlogTab />} />
-          </Route>
-          <Route path="tra" element={<Tea/>}/>
+    <Routes>
+      <Route path="" element={<WebsiteLayout />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="menu" element={<MenuPage />} />
+        <Route path="chuyennha" element={<ChuyenNhaPage />}>
+          <Route path="" element={<AllHomes />} />
+          <Route path="coffeeholic" element={<CoffeHolicTab />} />
+          <Route path="teaholic" element={<TeaHolicTab />} />
+          <Route path="blog" element={<BlogTab />} />
         </Route>
-        <Route path="signin" element={<Signin/>}/>
-        <Route path="regiter" element={<Signup/>}/>
-      </Routes>
+        <Route path="tra" element={<Tea />} />
+        <Route path="signin" element={<Signin />} />
+        <Route path="regiter" element={<Signup />} />
+      </Route>
+
+    </Routes>
   );
 }
 export default App
