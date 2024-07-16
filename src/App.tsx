@@ -8,9 +8,10 @@ import CoffeHolicTab from "./pages/ChuyenNhaPage/Tabs/CoffeeHome";
 import AllHomes from "./pages/ChuyenNhaPage/Tabs/AllHomes";
 import TeaHolicTab from "./pages/ChuyenNhaPage/Tabs/TeaHomes";
 import BlogTab from "./pages/ChuyenNhaPage/Tabs/BlogHomes";
-import Tea from "./pages/TraPage/tra";
 import Signup from "./account/signup/signup";
 import Signin from "./account/signin/signin";
+import CoffeePage from "./pages/CoffeePage/Coffee";
+import TeaPage from "./pages/TeaPage/TeaPage";
 // import AllHomes from "./pages/ChuyenNhaPage/Tabs/AllHomes";
 // import "./pages/HomePage/HomePage.css"
 function App() {
@@ -25,9 +26,10 @@ function App() {
           <Route path="teaholic" element={<TeaHolicTab />} />
           <Route path="blog" element={<BlogTab />} />
         </Route>
-        <Route path="tra" element={<Tea />} />
+        <Route path="coffee" element={<CoffeePage />} />
+        <Route path="tea" element={<TeaPage/>} />
         <Route path="signin" element={<Signin />} />
-        <Route path="regiter" element={<Signup />} />
+        <Route path="register" element={<Signup />} />
       </Route>
 
     </Routes>

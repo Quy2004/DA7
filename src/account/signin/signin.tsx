@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
+
 function Signin() {
     return (
         <>
-            <div className="bg-hero">
+            <section className="bg-hero bg-no-repeat bg-cover">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                     <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 text-left">Đăng nhập</h2>
                 </div>
@@ -28,10 +30,10 @@ function Signin() {
                     </form>
                     <p className="mt-10 text-center text-sm text-gray-500">
                         Bạn chưa có tài khoản?
-                        <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Đăng kí</a>
+                        <Link className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500" to={"/register"}>Đăng kí</Link>
                     </p>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
